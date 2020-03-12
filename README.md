@@ -1,2 +1,2 @@
-# practice_problems
+# js_practice_problems
 JavaScript Practice Problems
