@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function Car (make, model, weight, horsePower, color, doors){
+            this.make = make;
+            this.model = model;
+            this.weight = weight;
+            this.horsePower = horsePower;
+            this.color = color;
+            this.doors = doors;
+        }
+        Car.prototype.overview = function(){
+            console.log(`The cars make and model is a ${this.make}, ${this.model}.`)
+        }
+        Car.prototype.specs = function() {
+            console.log(`The car weighs ${this.weight} and has ${this.horsePower} horsepower.`);
+        }
+        Car.prototype.design = function() {
+            console.log(`The cars color is ${this.color} and has ${this.doors} doors.`);
+        }
+
+        var fiat = new Car('fiat', 500, '500kg', 200, 'white', 4);
+        fiat.overview();
+        fiat.specs();
+        fiat.design();
+
+        var prius = new Car ("toyota", "prius", "800kg", 120, 4);
+        prius.overview();
+        prius.specs();
+        prius.design();
+    </script>
+</body>
+</html>
