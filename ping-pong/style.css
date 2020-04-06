@@ -1,0 +1,17 @@
+body {
+    margin: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+button {
+    border: 1px solid black;
+    background-color: linear-gradient;
+}
