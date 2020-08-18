@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function makeArrayConsecutive2(statues) {
   const sortedArray = statues.sort((a, b) => a - b)
   let counter = 0;
@@ -14,4 +15,4 @@ function makeArrayConsecutive2(statues) {
     }
   }
   return counter;
-}   
+}
