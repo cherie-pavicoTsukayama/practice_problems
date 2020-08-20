@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+}
+header {
+  border-bottom: 1px solid rgb(232, 232, 232);
+  margin: auto;
+  height: 10vh;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.black-color {
+  color: black;
+}
+
+.nav-links {
+  grid-column: 2;
+
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+}
+.logo {
+  width: 100px;
+}
+
+ul {
+  height: 100%;
+  list-style-type: none;
+   margin: 0;
+   display: flex;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid rgb(232, 232, 232);
+  text-align: center;
+  width: 100px;
+  height: 100%;
+}
+
+li > a {
+  text-transform: uppercase;
+  font-weight: bold;
+  top: 50%;
+  text-decoration: none;
+  color: black;
+
+}
+
+li > a:hover, .pointer:hover {
+  cursor: pointer;
+}
+
+.warning {
+  position: relative;
+  text-align: center;
+  height: 8vh;
+  background-color: #FFF3B8 ;
+}
+
+.warning > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+}
+
+.hero-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url(./images/image.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 73vh;
+}
+
+.press-play {
+  height: 100%;
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sub-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+}
+
+.sub-footer > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: .75rem;
+}
+
+.sub-footer > button {
+
+  font-weight: bold;
+  font-size: 1rem;
+  height:50px;
+  padding: 0 1rem;
+  border-radius: 25px;
+}
+
+.sub-footer > button:first-child {
+  color: white;
+  background-color: rgb(5, 25, 126);
+  border: none;
+}
