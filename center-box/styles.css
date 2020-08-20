@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  background-color: #888;
+  height: 300px;
+  width: 300px;
+}
+
+.center-block {
+  position: absolute;
+  background-color: rgb(100, 195, 247);
+  height: 125px;
+  width: 150px;
+  transform: translate(50%, -50%);
+  top: 50%;
+
+}
