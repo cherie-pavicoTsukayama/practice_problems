@@ -11,6 +11,22 @@ body {
   color: white;
 }
 
+.nav-links{
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+.nav-links > div + div > ul > li > a {
+  text-decoration: none;
+  color: #999;
+  font-weight: bold;
+}
+.nav-links > div + div > ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .toast-container {
   height: 35px;
   width: 100%;
@@ -59,3 +75,32 @@ body {
   justify-content: space-between;
 }
 
+nav {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 200px;
+}
+
+.nav-logo-container {
+  grid-auto-columns: 1;
+}
+
+.nav-link-container {
+  grid-auto-columns: 2 / span 4;
+}
+
+.nav-link-container > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-shopping {
+  grid-auto-columns: 6;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
